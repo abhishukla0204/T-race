@@ -1,4 +1,5 @@
 import styles from './about.module.css';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -118,9 +119,9 @@ export default function About() {
       {/* FINAL CTA SECTION */}
       <div className={styles['cta-section']}>
         <h2>Ready to Race?</h2>
-        <a href="/race" className={styles['cta-button']}>
-          Start Your First Race Now! 🚀
-        </a>
+        <Link href="/race" passHref legacyBehavior>
+          <a className={styles['cta-button']}>Start Your First Race Now! 🚀</a>
+        </Link>
       </div>
     </section>
   );
