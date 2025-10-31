@@ -11,7 +11,7 @@ export default function About() {
         </div>
         <div className={styles['hero-illustration']}>
           {/* Placeholder for the complex glowing keyboard illustration */}
-          <p className={styles['illustration-placeholder']}>T-RACE ILLUSTRATION HERE</p>
+          <img src="/hero-keyboard.png" alt="neon keyboard" className={styles.keyboardImg} />
         </div>
       </div>
 
