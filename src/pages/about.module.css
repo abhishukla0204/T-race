@@ -11,8 +11,14 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ---------------- HERO SECTION ---------------- */
@@ -29,7 +35,7 @@
 }
 
 .hero-section::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -40%;
   left: -20%;
@@ -60,13 +66,13 @@
 }
 
 .hero-illustration::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 10%;
   left: 10%;
   width: 120%;
   height: 120%;
-  background: radial-gradient(circle, rgba(132,58,255,0.35), rgba(0,0,0,0));
+  background: radial-gradient(circle, rgba(132, 58, 255, 0.35), rgba(0, 0, 0, 0));
   filter: blur(50px);
   z-index: -1;
 }
@@ -90,10 +96,7 @@
   transform: translateX(-6%);
   border-radius: 18px;
 
-  filter:
-    drop-shadow(0 0 28px #9b4dff)
-    drop-shadow(0 0 45px #38d9ff);
-
+  filter: drop-shadow(0 0 28px #9b4dff) drop-shadow(0 0 45px #38d9ff);
 
   animation: fadeInKeyboard 1s ease-out;
 }
@@ -109,14 +112,13 @@
   }
 }
 
-
 /* ==================================== */
 /* 3. FEATURES SECTION */
 /* ==================================== */
 
-.mission-features-container h2{
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+.mission-features-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
 .mission-features-container,
@@ -132,41 +134,43 @@
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
 }
 
 .feature-card {
-    background-color: #161b22;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #30363d;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #161b22;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .feature-card:hover {
-    /* Subtle glow on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(76, 225, 255, 0.15);
+  /* Subtle glow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(76, 225, 255, 0.15);
 }
 
 .card-icon {
-    /* The gradient-border class is used here for the icon background */
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 60px;
-    height: 60px;
+  /* The gradient-border class is used here for the icon background */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 .feature-card h3 {
-    font-size: 1.5rem;
-    color: #4ce1ff;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #4ce1ff;
+  margin-bottom: 10px;
 }
 /* ---------------- HOW IT WORKS ---------------- */
 .process-tech-container {
@@ -191,7 +195,7 @@
 }
 
 .how-it-works h2::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -210,7 +214,7 @@
 }
 
 .steps-container::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 22px;
   width: 100%;
@@ -232,7 +236,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid #ffffff33;
   display: flex;
   align-items: center;
@@ -271,7 +275,7 @@
 }
 
 .tech-stack h2::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -302,7 +306,7 @@
 
 .tech-logo {
   padding: 0.5rem 1rem;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   border: 1px solid #ffffff20;
   font-size: 0.9rem;
@@ -319,7 +323,7 @@
   text-align: center;
 }
 
-.cta-section h2{
+.cta-section h2 {
   font-size: 1.8rem;
   font-weight: 400;
   padding-bottom: 0.8rem;
@@ -333,7 +337,9 @@
   font-weight: 600;
   border-radius: 30px;
   background: linear-gradient(90deg, #7349ff, #16c2ff);
-  box-shadow: 0 0 12px #8a49ff88, 0 0 22px #2dd8ff55;
+  box-shadow:
+    0 0 12px #8a49ff88,
+    0 0 22px #2dd8ff55;
   color: #ffffff;
   transition: 0.3s ease;
   border: none;
@@ -363,4 +369,3 @@
     margin-top: 2rem;
   }
 }
-
